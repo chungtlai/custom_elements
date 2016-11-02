@@ -37,5 +37,5 @@ abstract class DataTableTemplatizerBehaviorImpl implements CustomElementProxyMix
 
 
 @BehaviorProxy(const ['Polymer', 'saulis.DataTableTemplatizerBehavior'])
-abstract class DataTableTemplatizerBehavior implements CustomElementProxyMixin, Templatizer, saulis.DataTableTemplatizerBehaviorImpl {
+abstract class DataTableTemplatizerBehavior implements CustomElementProxyMixin, Templatizer, DataTableTemplatizerBehaviorImpl {
 }
