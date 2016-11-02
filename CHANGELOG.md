@@ -1,3 +1,8 @@
+##  0.0.10
+
+ - update latest version of components
+   - `iron-data-table` v1.0.4
+
 ##  0.0.9
 
  - update to latest version of components
