@@ -8,7 +8,6 @@ import 'dart:html';
 import 'dart:js' show JsArray, JsObject;
 import 'package:web_components/web_components.dart';
 import 'package:polymer_interop/polymer_interop.dart';
-import 'vittorio/.pub_cache/hosted/http%2558%2547%2547pub.drafintech.it%25585001/polymer_elements_1.0.0_rc.9/lib/src/iron_resizable_behavior/iron_resizable_behavior.dart';
 import 'package:polymer_elements/iron_flex_layout.dart';
 import 'package:polymer_elements/iron_icon.dart';
 import 'package:polymer_elements/iron_iconset_svg.dart';
