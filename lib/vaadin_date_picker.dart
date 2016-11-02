@@ -70,7 +70,7 @@ import 'vaadin_date_picker_icons.dart';
 /// If you want to replace the default input field with a custom implementation, you should use the
 /// [`<vaadin-date-picker-light>`](#vaadin-date-picker-light) element.
 @CustomElementProxy('vaadin-date-picker')
-class VaadinDatePicker extends HtmlElement with CustomElementProxyMixin, PolymerBase, IronFormElementBehavior, IronValidatableBehavior, IronA11yKeysBehavior, vaadin.elements.datepicker.DatePickerBehavior {
+class VaadinDatePicker extends HtmlElement with CustomElementProxyMixin, PolymerBase, IronFormElementBehavior, IronValidatableBehavior, IronA11yKeysBehavior, DatePickerBehavior {
   VaadinDatePicker.created() : super.created();
   factory VaadinDatePicker() => new Element.tag('vaadin-date-picker');
 
