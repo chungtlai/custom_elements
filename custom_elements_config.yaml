@@ -14,6 +14,8 @@ package_mappings:
   - Paper: polymer_elements
 # Configuration for running tool/generate_dart_api.dart
 files_to_generate:
+  - vaadin-split-layout/vaadin-split-layout.html
+  - vaadin-icons/vaadin-icons.html
   - vaadin-grid/vaadin-grid.html:
      overrides:
       VaadinGrid:

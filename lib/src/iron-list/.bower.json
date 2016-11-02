@@ -52,6 +52,6 @@
     "commit": "856ebcf90b2834aae728fc295b5dd5aa5ebc18ca"
   },
   "_source": "git://github.com/PolymerElements/iron-list.git",
-  "_target": "^1.2.0",
+  "_target": "^1.2.8",
   "_originalSource": "PolymerElements/iron-list"
 }

@@ -1,3 +1,8 @@
+##  0.0.11
+
+ - added `vaadin-spliy-layout`
+ - added `vaadin-icons`
+
 ##  0.0.10
 
  - update latest version of components
