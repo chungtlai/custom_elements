@@ -14,7 +14,11 @@ package_mappings:
   - Paper: polymer_elements
 # Configuration for running tool/generate_dart_api.dart
 files_to_generate:
-  - vaadin-split-layout/vaadin-split-layout.html
+  - vaadin-split-layout/vaadin-split-layout.html:
+     omit_imports:
+      - src/iron-resizable-behavior
+     extra_imports:
+      - package:polymer_elements/iron_resizable_behavior.dart
   - vaadin-icons/vaadin-icons.html
   - vaadin-grid/vaadin-grid.html:
      overrides:
