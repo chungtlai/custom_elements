@@ -29,13 +29,13 @@
   ],
   "devDependencies": {
     "web-component-tester": "^4.0.0",
-    "test-fixture": "polymerelements/test-fixture#^1.0.0",
-    "iron-test-helpers": "polymerelements/iron-test-helpers#^1.0.0",
-    "iron-component-page": "polymerelements/iron-component-page#^1.0.0",
-    "elements-demo-resources": "vaadin/elements-demo-resources#master",
+    "test-fixture": "PolymerElements/test-fixture#^1.0.0",
+    "iron-test-helpers": "PolymerElements/iron-test-helpers#^1.0.0",
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "elements-demo-resources": "Vaadin/elements-demo-resources#master",
+    "mock-http-request": "philikon/MockHttpRequest#master",
     "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
-    "paper-toast": "PolymerElements/paper-toast#^1.0.0",
-    "mock-http-request": "philikon/MockHttpRequest#master"
+    "paper-toast": "PolymerElements/paper-toast#^1.0.0"
   },
   "dependencies": {
     "polymer": "Polymer/polymer#^1.2.4",
@@ -47,12 +47,12 @@
     "iron-icon": "PolymerElements/iron-icon#^1.0.0",
     "iron-iconset-svg": "polymerelements/iron-iconset-svg#^1.0.0"
   },
-  "version": "1.0.3",
-  "_release": "1.0.3",
+  "version": "1.1.0",
+  "_release": "1.1.0",
   "_resolution": {
     "type": "version",
-    "tag": "v1.0.3",
-    "commit": "8f42d4ec0709271b0b3410f9f59148ae70d7a2be"
+    "tag": "v1.1.0",
+    "commit": "3fc0f5d8f21c3a5d3faf8fa4c5c426b0ebaf8ae9"
   },
   "_source": "https://github.com/vaadin/vaadin-upload.git",
   "_target": "*",

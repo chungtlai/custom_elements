@@ -98,6 +98,11 @@ class IronDataTable extends HtmlElement with CustomElementProxyMixin, PolymerBas
   IronDataTable.created() : super.created();
   factory IronDataTable() => new Element.tag('iron-data-table');
 
+  /// Timeout after which the data on the currently visible page will be automatically
+  /// refreshed after an item has been changed through a two-way binding.
+  num get autoRefresh => jsElement[r'autoRefresh'];
+  set autoRefresh(num value) { jsElement[r'autoRefresh'] = value; }
+
   /// A function that is called before data is bound to a row or header cell.
   /// Can be used to customize the cell element depending on the data.
   /// #### Example:
@@ -218,6 +223,10 @@ class IronDataTable extends HtmlElement with CustomElementProxyMixin, PolymerBas
   /// Expands the row details for this item, if available.
   expandItem(item) =>
       jsElement.callMethod('expandItem', [item]);
+
+  /// Clears the cache for a page and reloads the data from datasource.
+  refreshPage(page) =>
+      jsElement.callMethod('refreshPage', [page]);
 
   /// Selects all the items in the list.
   selectAll() =>

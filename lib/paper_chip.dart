@@ -11,10 +11,9 @@ import 'package:polymer_interop/polymer_interop.dart';
 import 'package:polymer_elements/iron_button_state.dart';
 import 'package:polymer_elements/iron_a11y_keys_behavior.dart';
 import 'package:polymer_elements/iron_control_state.dart';
-import 'package:polymer_elements/iron_a11y_keys.dart';
 import 'package:polymer_elements/iron_flex_layout.dart';
 import 'package:polymer_elements/iron_icons.dart';
-import 'package:polymer_elements/paper_icon_button.dart';
+import 'package:polymer_elements/iron_icon.dart';
 import 'package:polymer_elements/paper_material.dart';
 import 'package:polymer_elements/paper_styles.dart';
 
@@ -31,8 +30,9 @@ import 'package:polymer_elements/paper_styles.dart';
 ///
 /// .icon: The icon representing the chip. This may be any element, for
 ///             example, a `<iron-icon>` or a simple `<span>` with a single letter
-/// h1: The chip label, shown in both closed and opened states
-/// h2: A secondary label, shown only in the opened state
+/// .label: The chip label, shown in both closed and opened states
+/// .caption: A secondary label, shown only in the opened state
+/// all other content will be shown in the opened chip
 ///
 /// The `removable` attribute can be used to add a button which removes the chip
 /// from the DOM.
@@ -43,15 +43,15 @@ import 'package:polymer_elements/paper_styles.dart';
 ///
 ///     <paper-chip removable>
 ///       <iron-icon class="icon" icon="avatars:avatar-1"></iron-icon>
-///       <h1>John Doe</h1>
-///       <h2>jdoe@example.com</h2>
+///       <div class="labeL">John Doe</div>
+///       <div class="caption">jdoe@example.com</div>
 ///     </paper-chip>
 ///
 /// Basic chip with single letter instead of an icon
 ///
 ///     <paper-chip label="Jane Doe">
 ///       <div class="icon">J</div>
-///       <h1>jdoe@example.com</h1>
+///       <div class="label">jdoe@example.com</div>
 ///     </paper-chip>
 @CustomElementProxy('paper-chip')
 class PaperChip extends HtmlElement with CustomElementProxyMixin, PolymerBase, IronA11yKeysBehavior, IronButtonState, IronControlState {
@@ -72,14 +72,22 @@ class PaperChip extends HtmlElement with CustomElementProxyMixin, PolymerBase, I
   bool get opened => jsElement[r'opened'];
   set opened(bool value) { jsElement[r'opened'] = value; }
 
+  /// Always show remove button
+  bool get persistRemoveButton => jsElement[r'persistRemoveButton'];
+  set persistRemoveButton(bool value) { jsElement[r'persistRemoveButton'] = value; }
+
   /// Whether or not the chip is removable. If `true`, a remove button will
   /// be shown.
   bool get removable => jsElement[r'removable'];
   set removable(bool value) { jsElement[r'removable'] = value; }
 
+  /// Whether or not the chip contains additional content. Single-line chips do not open.
+  bool get singleLine => jsElement[r'singleLine'];
+  set singleLine(bool value) { jsElement[r'singleLine'] = value; }
+
   /// Fired before the element is removed. This event is cancelable.
-  remove() =>
-      jsElement.callMethod('remove', []);
+  remove(event) =>
+      jsElement.callMethod('remove', [event]);
 
   toggleOpened() =>
       jsElement.callMethod('toggleOpened', []);

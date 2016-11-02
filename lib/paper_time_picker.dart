@@ -14,7 +14,7 @@ import 'package:polymer_elements/neon_animation/animations/fade_out_animation.da
 import 'package:polymer_elements/iron_media_query.dart';
 import 'package:polymer_elements/iron_selector.dart';
 import 'package:polymer_elements/iron_flex_layout.dart';
-import 'package:polymer_elements/paper_styles.dart';
+import 'package:polymer_elements/typography.dart';
 import 'package:polymer_elements/neon_animated_pages.dart';
 import 'package:polymer_elements/neon_animatable.dart';
 import 'package:custom_elements/paper_clock_selector.dart';
@@ -55,6 +55,9 @@ class PaperTimePicker extends HtmlElement with CustomElementProxyMixin, PolymerB
   bool get animated => jsElement[r'animated'];
   set animated(bool value) { jsElement[r'animated'] = value; }
 
+  bool get enableSeconds => jsElement[r'enableSeconds'];
+  set enableSeconds(bool value) { jsElement[r'enableSeconds'] = value; }
+
   /// Force narrow layout
   bool get forceNarrow => jsElement[r'forceNarrow'];
   set forceNarrow(bool value) { jsElement[r'forceNarrow'] = value; }
@@ -81,13 +84,17 @@ class PaperTimePicker extends HtmlElement with CustomElementProxyMixin, PolymerB
   String get period => jsElement[r'period'];
   set period(String value) { jsElement[r'period'] = value; }
 
-  /// The time value as the number of minutes from midnight
+  /// The time value as the number of minutes(if enableSeconds then number of seconds) from midnight
   num get rawValue => jsElement[r'rawValue'];
   set rawValue(num value) { jsElement[r'rawValue'] = value; }
 
   /// Maximum screen width at which the picker uses a vertical layout
   String get responsiveWidth => jsElement[r'responsiveWidth'];
   set responsiveWidth(String value) { jsElement[r'responsiveWidth'] = value; }
+
+  /// The current second (0-59)
+  num get second => jsElement[r'second'];
+  set second(num value) { jsElement[r'second'] = value; }
 
   /// The selected time
   String get time => jsElement[r'time'];
@@ -97,8 +104,8 @@ class PaperTimePicker extends HtmlElement with CustomElementProxyMixin, PolymerB
   String get view => jsElement[r'view'];
   set view(String value) { jsElement[r'view'] = value; }
 
-  formatTime(hour, minute) =>
-      jsElement.callMethod('formatTime', [hour, minute]);
+  formatTime(hour, minute, second) =>
+      jsElement.callMethod('formatTime', [hour, minute, second]);
 
   parseTime(timeString) =>
       jsElement.callMethod('parseTime', [timeString]);

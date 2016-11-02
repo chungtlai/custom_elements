@@ -62,8 +62,8 @@ import 'package:polymer_interop/polymer_interop.dart';
 /// `--vaadin-grid-header-row-height` | Header row height | `56px`
 /// `--vaadin-grid-footer-row-height` | Footer row height | `56px`
 /// `--vaadin-grid-selected-row-cell` | Mixin which applies to the cell elements of a selected row | {}
-/// '--vaadin-grid-row-cell' | Mixin which applies to the cell elements of the table | {}
-///
+/// `--vaadin-grid-row-cell` | Mixin which applies to the cell elements of the table | {}
+/// `--vaadin-grid-row-stripe-cell` | Mixin applied on the cells of the striped rows | {}
 ///
 /// See the [demo](demo/index.html) for use case examples.
 @CustomElementProxy('vaadin-grid')
@@ -71,12 +71,22 @@ class VaadinGrid extends HtmlElement with CustomElementProxyMixin, PolymerBase {
   VaadinGrid.created() : super.created();
   factory VaadinGrid() => new Element.tag('vaadin-grid');
 
+  /// Boolean property to set whether column reordering is allowed by the grid.
+  bool get columnReorderingAllowed => jsElement[r'columnReorderingAllowed'];
+  set columnReorderingAllowed(bool value) { jsElement[r'columnReorderingAllowed'] = value; }
+
   /// The array of columns attached to the grid.
   ///
   /// See the API documentation for “column” for more details about the
   /// column objects.
   get columns => jsElement[r'columns'];
   set columns(value) { jsElement[r'columns'] = (value is Map || (value is Iterable && value is! JsArray)) ? new JsObject.jsify(value) : value;}
+
+  /// List of the events that should be observed in the internal grid implementation.
+  /// When any of the observed events is performed, the grid will fire a `detailed-event`
+  /// where -event is replaced by the original event type.
+  get detailedEvents => jsElement[r'detailedEvents'];
+  set detailedEvents(value) { jsElement[r'detailedEvents'] = (value is Map || (value is Iterable && value is! JsArray)) ? new JsObject.jsify(value) : value;}
 
   /// Disables the grid.
   ///
