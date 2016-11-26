@@ -1,6 +1,10 @@
+##  0.0.12
+ - added 'vaadin-date-picker'
+ - some fixes
+
 ##  0.0.11
 
- - added `vaadin-spliy-layout`
+ - added `vaadin-split-layout`
  - added `vaadin-icons`
 
 ##  0.0.10

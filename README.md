@@ -13,6 +13,7 @@ Also some styles from [polymerthemes.com](https://polymerthemes.com)
  - [iron-data-table](https://customelements.io/Saulis/iron-data-table/)
  - [vaadin-upload](https://customelements.io/vaadin/vaadin-upload/)
  - [vaadin-grid](https://customelements.io/vaadin/vaadin-grid/)
+ - [vaadin-date-picker](https://customelements.io/vaadin/vaadin-date-picker/)
 
 
 ## Ported but not working
