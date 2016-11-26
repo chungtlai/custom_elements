@@ -14,6 +14,8 @@ package_mappings:
   - Paper: polymer_elements
 # Configuration for running tool/generate_dart_api.dart
 files_to_generate:
+  - moment-element/moment-import.html
+  - moment-element/moment-with-locales-import.html
   - vaadin-date-picker/vaadin-date-picker-behavior.html:
      omit_imports:
        - iron-form-element-behavior
