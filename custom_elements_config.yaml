@@ -8,6 +8,7 @@ package_mappings:
   - iron-: polymer_elements
   - neon-: polymer_elements
   - paper-: polymer_elements
+  - shadow: polymer_elements
   - typography: polymer_elements
   # For mixin classes
   - Iron: polymer_elements
@@ -188,6 +189,13 @@ files_to_generate:
   - vaadin-upload/vaadin-upload-icons.html
 stubs_to_generate:
  polymer_elements:
+  - iron-dropdown/iron-dropdown.html
+  - iron-input/iron-input.html
+#  - paper-input/paper-input-container.html
+  - iron-a11y-announcer/iron-a11y-announcer.html
+  - iron-overlay-behavior/iron-overlay-behavior.html
+  - iron-meta/iron-meta.html
+#  - paper-input/paper-input-error.html
   - paper-checkbox/paper-checkbox.html
   - paper-tooltip/paper-tooltip.html
   - iron-resizable-behavior/iron-resizable-behavior.html

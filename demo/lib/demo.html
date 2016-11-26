@@ -50,6 +50,7 @@
             <paper-tabs selected="{{selectedPage}}">
                 <paper-tab>Varia</paper-tab>
                 <paper-tab>Layout</paper-tab>
+                <paper-tab>Vaadin</paper-tab>
             </paper-tabs>
             <iron-pages class="fl rel ov" selected="[[selectedPage]]">
                 <div>
@@ -71,8 +72,8 @@
                     <vaadin-grid items="[[myData]]" selection-mode="multi" frozen-columns="1">
                         <table>
                             <colgroup>
-				<col name='page'>
-				<col name='title'>
+                      				<col name='page'>
+                      				<col name='title'>
                             </colgroup>
                         </table>
                     </vaadin-grid>
@@ -151,6 +152,10 @@
                     <div>
                         <paper-button>TEST</paper-button>
                     </div>
+                </div>
+                <div class='vl fit'>
+                  <h1>Vaadins</h1>
+                  <vaadin-date-picker></vaadin-date-picker>
                 </div>
             </iron-pages>
         </div>

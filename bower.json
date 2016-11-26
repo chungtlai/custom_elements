@@ -18,6 +18,7 @@
     "vaadin-grid": "*" ,
     "vaadin-split-layout" : "*" ,
     "vaadin-icons" : "*",
-    "vaadin-date-picker" : "vaadin-date-picker#v1.2.0-beta1"
+    "vaadin-date-picker" : "vaadin-date-picker#v1.2.0-beta1",
+    "iron-input": "*"
   }
 }

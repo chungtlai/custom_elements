@@ -8,7 +8,7 @@ import 'dart:html';
 import 'dart:js' show JsArray, JsObject;
 import 'package:web_components/web_components.dart';
 import 'package:polymer_interop/polymer_interop.dart';
-import 'shadow.dart';
+import 'package:polymer_elements/shadow.dart';
 import 'package:polymer_elements/typography.dart';
 import 'package:polymer_elements/iron_icon.dart';
 import 'package:polymer_elements/iron_input.dart';

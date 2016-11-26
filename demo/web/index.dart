@@ -1,6 +1,6 @@
 import 'package:polymer/init.dart';
 import 'package:polymer/polymer.dart';
-import "dart:html";
+// ignore: UNUSED_IMPORT
 import "package:demo_custom_elements/demo.dart";
 
 import "package:logging/logging.dart";

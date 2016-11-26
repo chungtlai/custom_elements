@@ -3,10 +3,15 @@ library polymer_autonotify.demo;
 
 import "package:polymer/polymer.dart";
 import "package:web_components/web_components.dart" show HtmlImport;
+// ignore: UNUSED_IMPORT
 import "package:polymer_elements/iron_flex_layout.dart";
+// ignore: UNUSED_IMPORT
 import "package:custom_elements/iron_data_table.dart";
+// ignore: UNUSED_IMPORT
 import "package:custom_elements/data_table_column.dart";
+// ignore: UNUSED_IMPORT
 import "package:custom_elements/data_table_column_sort.dart";
+// ignore: UNUSED_IMPORT
 import "package:custom_elements/iron_data_table_style.dart";
 /*
 
@@ -14,19 +19,30 @@ import "package:custom_elements/iron_data_table_style.dart";
 import "package:custom_elements/paper_datatable.dart";
 import "package:custom_elements/paper_datatable_column.dart";
 */
+// ignore: UNUSED_IMPORT
 import "package:custom_elements/paper_date_picker.dart";
+// ignore: UNUSED_IMPORT
 import "package:custom_elements/paper_time_picker.dart";
+// ignore: UNUSED_IMPORT
 import "package:custom_elements/paper_date_picker_dialog_style.dart";
 //import "package:custom_elements/paper_chip.dart";
+// ignore: UNUSED_IMPORT
 import "package:polymer_elements/paper_button.dart";
 import "package:polymer_elements/paper_dialog.dart";
-import "package:custom_elements/paper_date_picker_dialog_style.dart";
+// ignore: UNUSED_IMPORT
 import "package:custom_elements/paper_divider.dart";
+// ignore: UNUSED_IMPORT
 import "package:custom_elements/vaadin_upload.dart";
+// ignore: UNUSED_IMPORT
 import "package:custom_elements/vaadin_grid.dart";
+// ignore: UNUSED_IMPORT
 import "package:polymer_elements/paper_tabs.dart";
+// ignore: UNUSED_IMPORT
 import "package:polymer_elements/paper_tab.dart";
+// ignore: UNUSED_IMPORT
 import "package:polymer_elements/iron_pages.dart";
+// ignore: UNUSED_IMPORT
+import 'package:custom_elements/vaadin_date_picker.dart';
 
 import "dart:async";
 
@@ -56,7 +72,7 @@ class TestPolymerAutonotify extends PolymerElement {
   String contentOf(Item item,String colName) {
     if (item is! Item) {
 	return "null";
-    } 
+    }
     switch(colName) {
       case "page":
         return item.page;
