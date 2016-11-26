@@ -79,6 +79,7 @@ files_to_generate:
       - src/iron-resizable-behavior
       - fade-in-animation.html
       - fade-out-animation.html
+      - classlist-shim.html
      extra_imports:
       - package:polymer_elements/iron_resizable_behavior.dart
       - package:polymer_elements/neon_animation/animations/fade_in_animation.dart
