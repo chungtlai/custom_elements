@@ -7,16 +7,16 @@ dependencies:
   polymer_interop: ^1.0.0-rc.5
   web_components: ^0.12.0
   polymer_elements: ^1.0.0-rc.8
-#dependency_overrides:
-#  custom_element_apigen:
-#   path: ../custom-element-apigen
+dependency_overrides:
+  custom_element_apigen:
+   path: ../custom-element-apigen
 dev_dependencies:
   browser: ^0.10.0
   custom_element_apigen: ^0.2.2
   html5lib: ">=0.11.0 <0.13.0"
   path: ^1.0.0
   polymer: ^1.0.0-rc.6
-  reflectable: ">=0.3.1 <0.5.0"
+#  reflectable: ">=1.3.1 <0.5.0"
   test: ^0.12.5+1
   yaml: ">=1.0.0 <3.0.0"
 

@@ -8,10 +8,10 @@ import 'dart:html';
 import 'dart:js' show JsArray, JsObject;
 import 'package:web_components/web_components.dart';
 import 'package:polymer_interop/polymer_interop.dart';
+import 'package:polymer_elements/iron_resizable_behavior.dart';
 import 'package:polymer_elements/iron_flex_layout.dart';
 import 'package:polymer_elements/iron_icon.dart';
 import 'package:polymer_elements/iron_iconset_svg.dart';
-import 'package:polymer_elements/iron_resizable_behavior.dart';
 
 /// `<vaadin-split-layout>` is a Polymer element implementing a split layout for two
 /// content elements with a draggable splitter between them.

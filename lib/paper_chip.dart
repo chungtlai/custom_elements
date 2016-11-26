@@ -43,15 +43,15 @@ import 'package:polymer_elements/paper_styles.dart';
 ///
 ///     <paper-chip removable>
 ///       <iron-icon class="icon" icon="avatars:avatar-1"></iron-icon>
-///       <div class="labeL">John Doe</div>
-///       <div class="caption">jdoe@example.com</div>
+///       <div slot="label">John Doe</div>
+///       <div slot="caption">jdoe@example.com</div>
 ///     </paper-chip>
 ///
 /// Basic chip with single letter instead of an icon
 ///
 ///     <paper-chip label="Jane Doe">
-///       <div class="icon">J</div>
-///       <div class="label">jdoe@example.com</div>
+///       <div slot="icon">J</div>
+///       <div slot="label">jdoe@example.com</div>
 ///     </paper-chip>
 @CustomElementProxy('paper-chip')
 class PaperChip extends HtmlElement with CustomElementProxyMixin, PolymerBase, IronA11yKeysBehavior, IronButtonState, IronControlState {

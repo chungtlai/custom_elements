@@ -14,6 +14,41 @@ package_mappings:
   - Paper: polymer_elements
 # Configuration for running tool/generate_dart_api.dart
 files_to_generate:
+  - vaadin-date-picker/vaadin-date-picker-behavior.html:
+     omit_imports:
+       - iron-form-element-behavior
+       - iron-validatable-behavior
+       - iron-a11y-keys-behavior
+     extra_imports:
+       - package:polymer_elements/iron_form_element_behavior.dart
+       - package:polymer_elements/iron_validatable_behavior.dart
+       - package:polymer_elements/iron_a11y_keys_behavior.dart
+  - vaadin-date-picker/vaadin-date-picker-helper.html
+  - vaadin-date-picker/vaadin-date-picker.html:
+     omit_imports:
+       - iron-form-element-behavior
+       - iron-validatable-behavior
+       - iron-a11y-keys-behavior
+     extra_imports:
+       - package:polymer_elements/iron_form_element_behavior.dart
+       - package:polymer_elements/iron_validatable_behavior.dart
+       - package:polymer_elements/iron_a11y_keys_behavior.dart
+
+  - vaadin-date-picker/vaadin-date-picker-icons.html
+  - vaadin-date-picker/vaadin-date-picker-light.html:
+     omit_imports:
+       - iron-form-element-behavior
+       - iron-validatable-behavior
+       - iron-a11y-keys-behavior
+     extra_imports:
+       - package:polymer_elements/iron_form_element_behavior.dart
+       - package:polymer_elements/iron_validatable_behavior.dart
+       - package:polymer_elements/iron_a11y_keys_behavior.dart
+  - vaadin-date-picker/vaadin-date-picker-overlay.html
+  - vaadin-date-picker/vaadin-infinite-scroller.html:
+      omit_imports:
+         - templatizer.html
+  - vaadin-date-picker/vaadin-month-calendar.html
   - vaadin-split-layout/vaadin-split-layout.html:
      omit_imports:
       - src/iron-resizable-behavior
@@ -187,6 +222,8 @@ stubs_to_generate:
   - iron-a11y-keys/iron-a11y-keys.html
   - iron-behaviors/iron-button-state.html
   - iron-behaviors/iron-control-state.html
+  - iron-form-element-behavior/iron-form-element-behavior.html
+  - iron-validatable-behavior/iron-validatable-behavior.html
   - paper-toast/paper-toast.html
  polymer:
   - polymer/polymer.html
@@ -196,6 +233,8 @@ files_to_load:
   - package:polymer_elements/src/iron-behaviors/iron-button-state.html
   - package:polymer_elements/src/iron-behaviors/iron-control-state.html
   - package:polymer_elements/src/iron-a11y-keys-behavior/iron-a11y-keys-behavior.html
+  - package:polymer_elements/src/iron-form-element-behavior/iron-form-element-behavior.html
+  - package:polymer_elements/src/iron-validatable-behavior/iron-validatable-behavior.html
 #  - package:polymer_elements/src/iron-list/iron-list.html
 #  - package:polymer_elements/src/paper-checkbox/paper-checkbox.html
 #  - package:polymer_elements/src/paper-tooltip/paper-tooltip.html

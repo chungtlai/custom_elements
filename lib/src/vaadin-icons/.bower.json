@@ -1,6 +1,6 @@
 {
   "name": "vaadin-icons",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "homepage": "https://github.com/vaadin/vaadin-icons",
   "authors": [
     "Vaadin Ltd"
@@ -32,11 +32,11 @@
   "devDependencies": {
     "iron-component-page": "polymerelements/iron-component-page#~1.1.4"
   },
-  "_release": "1.0.2",
+  "_release": "2.0.0",
   "_resolution": {
     "type": "version",
-    "tag": "v1.0.2",
-    "commit": "9add37003aa094512e6bb0b072f3940eba51b2c5"
+    "tag": "v2.0.0",
+    "commit": "7f2451a6ff325cf4819e07d14b41911a1e243eb2"
   },
   "_source": "https://github.com/vaadin/vaadin-icons.git",
   "_target": "*",
