@@ -9,6 +9,7 @@ dependencies:
   polymer: "^1.0.0-rc.15"
   polymer_elements: ^1.0.0-rc.7
   browser: any
+  intl: any
   custom_elements:
     path: ..
 

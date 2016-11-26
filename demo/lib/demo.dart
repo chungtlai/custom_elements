@@ -43,37 +43,69 @@ import "package:polymer_elements/paper_tab.dart";
 import "package:polymer_elements/iron_pages.dart";
 // ignore: UNUSED_IMPORT
 import 'package:custom_elements/vaadin_date_picker.dart';
+import 'package:intl/intl.dart';
+import 'package:intl/date_symbol_data_local.dart';
+import 'package:intl/date_symbols.dart';
 
 import "dart:async";
 
+DateSymbols symbols =
+    dateTimeSymbolMap()['it'];
+
 class Item extends JsProxy {
-  @reflectable String page;
-  @reflectable String title;
+  @reflectable
+  String page;
+  @reflectable
+  String title;
 
   Item({this.page, this.title});
 }
 
 @PolymerRegister("test-custom-elements")
 class TestPolymerAutonotify extends PolymerElement {
+  @property
+  int selectedPage = 0;
 
-  @property int selectedPage = 0;
+  @property
+  List<String> cols = ["page", "title"];
 
+  @property
+  var dateLocale = {
+    'week': 'settimana',
+    'calendar': 'calendario',
+    'clear': 'pulisci',
+    'today': 'oggi',
+    'cancel': 'annulla',
+    'firstDayOfWeek': 1,
+    'monthNames':symbols.MONTHS,
+    'weekdays': symbols.WEEKDAYS,
+    'weekdaysShort': symbols.SHORTWEEKDAYS,
+    'formatDate': (d) {
+      return new DateFormat('dd/MM/yyyy').format(d);
+    },
+    'parseDate': (text) {
+      DateFormat simpleDateFormat = new DateFormat('dd/MM/yyyy');
+      return simpleDateFormat.parse(text);
+    },
+    'formatTitle': (monthName, fullYear) {
+      return "${monthName} ${fullYear}";
+    }
+  };
 
-  @property List<String> cols = ["page","title"];
-
-
-  @property var myData/* = [
+  @property
+  var myData /* = [
     new Item(page: "pag1", title: "tit1"),
     new Item(page: "pag2", title: "tit2"),
     new Item(page: "pag3", title: "tit3")
-  ]*/;
+  ]*/
+      ;
 
   @reflectable
-  String contentOf(Item item,String colName) {
+  String contentOf(Item item, String colName) {
     if (item is! Item) {
-	return "null";
+      return "null";
     }
-    switch(colName) {
+    switch (colName) {
       case "page":
         return item.page;
       case "title":
@@ -83,30 +115,31 @@ class TestPolymerAutonotify extends PolymerElement {
     return "?";
   }
 
-  @Property(notify: true) bool datePickerDialogOpened = false;
+  @Property(notify: true)
+  bool datePickerDialogOpened = false;
 
   PaperDialog get dlg1 => $["dlg1"];
   PaperDialog get dlg2 => $["dlg2"];
 
-  @property var currentDate=new DateTime.now();
-  @property var currentTime="11:44 PM";
-
+  @property
+  var currentDate = new DateTime.now();
+  @property
+  var currentTime = "11:44 PM";
 
   @reflectable
-  void showDatePicker([_,__]) {
-    set("datePickerDialogOpenend",true);
+  void showDatePicker([_, __]) {
+    set("datePickerDialogOpenend", true);
     dlg1.opened = true;
   }
 
   @reflectable
-  void showTimePicker([_,__]) {
-    set("timePickerDialogOpenend",true);
+  void showTimePicker([_, __]) {
+    set("timePickerDialogOpenend", true);
     dlg2.opened = true;
   }
 
   void attached() {
-
-    new Future.delayed(new Duration(microseconds: 1)).then((_){
+    new Future.delayed(new Duration(microseconds: 1)).then((_) {
       set('myData', [
         new Item(page: "pag1", title: "tit1"),
         new Item(page: "pag2", title: "tit2"),
@@ -117,9 +150,7 @@ class TestPolymerAutonotify extends PolymerElement {
         new Item(page: "pag7", title: "tit7")
       ]);
     });
-
   }
-
 
   TestPolymerAutonotify.created() : super.created();
 }
