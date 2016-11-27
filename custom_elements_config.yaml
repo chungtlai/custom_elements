@@ -191,11 +191,11 @@ stubs_to_generate:
  polymer_elements:
   - iron-dropdown/iron-dropdown.html
   - iron-input/iron-input.html
-#  - paper-input/paper-input-container.html
+  - paper-input/paper-input-container.html
   - iron-a11y-announcer/iron-a11y-announcer.html
   - iron-overlay-behavior/iron-overlay-behavior.html
   - iron-meta/iron-meta.html
-#  - paper-input/paper-input-error.html
+  - paper-input/paper-input-error.html
   - paper-checkbox/paper-checkbox.html
   - paper-tooltip/paper-tooltip.html
   - iron-resizable-behavior/iron-resizable-behavior.html
@@ -207,7 +207,7 @@ stubs_to_generate:
   - paper-input/paper-input.html
   - iron-icon/iron-icon.html
   - iron-iconset-svg/iron-iconset-svg.html
-  - iron-icons/iron-icons.html
+#  - iron-icons/iron-icons.html
   - paper-ripple/paper-ripple.html
   - paper-material/paper-material.html
   - paper-button/paper-button.html
@@ -231,12 +231,12 @@ stubs_to_generate:
   - neon-animation/neon-animated-pages.html
   - iron-selector/iron-selector.html
   - iron-flex-layout/iron-flex-layout.html
-  - iron-a11y-keys/iron-a11y-keys.html
+#  - iron-a11y-keys/iron-a11y-keys.html
   - iron-behaviors/iron-button-state.html
   - iron-behaviors/iron-control-state.html
   - iron-form-element-behavior/iron-form-element-behavior.html
   - iron-validatable-behavior/iron-validatable-behavior.html
-  - paper-toast/paper-toast.html
+#  - paper-toast/paper-toast.html
  polymer:
   - polymer/polymer.html
 files_to_load:
@@ -257,7 +257,7 @@ deletion_patterns:
  - ^iron-check
  - ^iron-flex
  - ^iron-form
- - ^iron-inp
+# - ^iron-inp
  - ^iron-met
  - ^iron-scr
  - ^iron-val
@@ -286,7 +286,7 @@ deletion_patterns:
  - ^iron-icons/places-icons.html
  - ^iron-icons/social-icons.html
  - ^iron-iconset-svg
- - ^paper-input/paper-input-.*.html
+# - ^paper-input/paper-input-.*.html
  - ^paper-input/paper-textarea.html
  - ^paper-input/all-imports.html
  - ^polymer/polymer-*.html

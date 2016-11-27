@@ -31,9 +31,9 @@
   "_resolution": {
     "type": "version",
     "tag": "v1.0.0",
-    "commit": "d85cf18d631b76e9dd7ef56918a2fc6643762afa"
+    "commit": "8beb6bddf47d3c20a66a2004cd56ffde4befed67"
   },
-  "_source": "git://github.com/WebPaperElements/paper-divider.git",
+  "_source": "https://github.com/WebPaperElements/paper-divider.git",
   "_target": "*",
   "_originalSource": "paper-divider"
 }
