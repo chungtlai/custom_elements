@@ -207,7 +207,7 @@ stubs_to_generate:
   - paper-input/paper-input.html
   - iron-icon/iron-icon.html
   - iron-iconset-svg/iron-iconset-svg.html
-#  - iron-icons/iron-icons.html
+  - iron-icons/iron-icons.html
   - paper-ripple/paper-ripple.html
   - paper-material/paper-material.html
   - paper-button/paper-button.html

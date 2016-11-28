@@ -8,17 +8,21 @@
   "private": true,
   "dependencies": {
     "paper-datatable": "*",
-    "iron-data-table" : "iron-data-table#1.0.4",
+    "iron-data-table": "iron-data-table#1.0.4",
     "polymer-paper-date-picker": "*",
     "paper-time-picker": "*",
-    "paper-chip":"*",
-    "paper-divider":"*",
+    "paper-chip": "*",
+    "paper-divider": "*",
     "paper-button": "PolymerElements/paper-button#^1.0.0",
     "vaadin-upload": "*",
-    "vaadin-grid": "*" ,
-    "vaadin-split-layout" : "*" ,
-    "vaadin-icons" : "*",
-    "vaadin-date-picker" : "vaadin-date-picker#v1.2.0-beta1",
-    "iron-input": "*"
+    "vaadin-grid": "*",
+    "vaadin-split-layout": "*",
+    "vaadin-icons": "*",
+    "vaadin-date-picker": "vaadin-date-picker#v1.2.0-beta1",
+    "iron-icons": "*"
+  },
+  "resolutions": {
+    "polymer": "^1.7.0",
+    "paper-styles": "^1.1.5"
   }
 }
