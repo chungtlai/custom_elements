@@ -18,6 +18,7 @@ package_mappings:
   - Paper: polymer_elements
 # Configuration for running tool/generate_dart_api.dart
 files_to_generate:
+  - paper-more-button/paper-more-button.html
   - paper-search/paper-filter-dialog.html
   - paper-search/paper-search-bar.html
   - paper-search/paper-search.html
