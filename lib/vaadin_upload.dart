@@ -76,6 +76,10 @@ class VaadinUpload extends HtmlElement with CustomElementProxyMixin, PolymerBase
   List get files => jsElement[r'files'];
   set files(List value) { jsElement[r'files'] = (value != null && value is! JsArray) ? new JsObject.jsify(value) : value;}
 
+  /// Specifies the 'name' property at Content-Disposition
+  String get formDataName => jsElement[r'formDataName'];
+  set formDataName(String value) { jsElement[r'formDataName'] = value; }
+
   /// Key-Value map to send to the server. If you set this property as an
   /// attribute, use a valid JSON string, for example:
   /// ```

@@ -1,5 +1,7 @@
 package_mappings:
   - paper-search: custom_elements
+  - paper-more: custom_elements
+  - paper-filter: custom_elements
   - paper-datatable: custom_elements
   - paper-calendar: custom_elements
   - paper-date: custom_elements
@@ -213,6 +215,7 @@ stubs_to_generate:
   - iron-icon/iron-icon.html
   - iron-iconset-svg/iron-iconset-svg.html
   - iron-icons/iron-icons.html
+  - iron-icons/image-icons.html
   - paper-ripple/paper-ripple.html
   - paper-material/paper-material.html
   - paper-button/paper-button.html
@@ -285,7 +288,6 @@ deletion_patterns:
  - ^iron-icons/editor-icons.html
  - ^iron-icons/hardware-icons.html
  - ^iron-icons/hero.svg
- - ^iron-icons/image-icons.html
  - ^iron-icons/maps-icons.html
  - ^iron-icons/notification-icons.html
  - ^iron-icons/places-icons.html

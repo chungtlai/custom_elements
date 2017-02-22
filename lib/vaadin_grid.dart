@@ -77,12 +77,12 @@ class VaadinGrid extends HtmlElement with CustomElementProxyMixin, PolymerBase {
 
   /// The array of columns attached to the grid.
   ///
-  /// See the API documentation for “column” for more details about the
+  /// See the API documentation for `Column` for more details about the
   /// column objects.
   get columns => jsElement[r'columns'];
   set columns(value) { jsElement[r'columns'] = (value is Map || (value is Iterable && value is! JsArray)) ? new JsObject.jsify(value) : value;}
 
-  /// List of the events that should be observed in the internal grid implementation.
+  /// List of the pointer events that should be observed in the internal grid implementation.
   /// When any of the observed events is performed, the grid will fire a `detailed-event`
   /// where -event is replaced by the original event type.
   get detailedEvents => jsElement[r'detailedEvents'];
@@ -99,7 +99,7 @@ class VaadinGrid extends HtmlElement with CustomElementProxyMixin, PolymerBase {
 
   /// Object for controlling and accessing the footer rows in the grid.
   ///
-  /// See the API documentation for “footer” for more details.
+  /// See the API documentation for `Footer` for more details.
   get footer => jsElement[r'footer'];
   set footer(value) { jsElement[r'footer'] = (value is Map || (value is Iterable && value is! JsArray)) ? new JsObject.jsify(value) : value;}
 
@@ -121,7 +121,7 @@ class VaadinGrid extends HtmlElement with CustomElementProxyMixin, PolymerBase {
 
   /// Object for controlling and accessing the header rows in the grid.
   ///
-  /// See the API documentation for “header” for more details.
+  /// See the API documentation for `Header` for more details.
   get header => jsElement[r'header'];
   set header(value) { jsElement[r'header'] = (value is Map || (value is Iterable && value is! JsArray)) ? new JsObject.jsify(value) : value;}
 
@@ -132,7 +132,7 @@ class VaadinGrid extends HtmlElement with CustomElementProxyMixin, PolymerBase {
   /// lazily to the grid, for example from a REST service, to get only the
   /// items that are necessary in the grid viewport.
   ///
-  /// See the API documentation for "items function" for more details.
+  /// See the API documentation for `ItemsFunction` for more details.
   ///
   /// For an in-memory list of items, use the `items` array property instead.
   ///
@@ -164,7 +164,7 @@ class VaadinGrid extends HtmlElement with CustomElementProxyMixin, PolymerBase {
 
   /// Object for controlling and accessing the selected rows in the grid.
   ///
-  /// See the API documentation for the “selection” object for more details.
+  /// See the API documentation for the `Selection` object for more details.
   get selection => jsElement[r'selection'];
   set selection(value) { jsElement[r'selection'] = (value is Map || (value is Iterable && value is! JsArray)) ? new JsObject.jsify(value) : value;}
 
@@ -180,7 +180,7 @@ class VaadinGrid extends HtmlElement with CustomElementProxyMixin, PolymerBase {
   /// the array defines the order of sort (if the grid is sorted by
   /// multiple columns).
   ///
-  /// See the API documentation for the “sort-order” object for more details.
+  /// See the API documentation for the `SortOrder` object for more details.
   List get sortOrder => jsElement[r'sortOrder'];
   set sortOrder(List value) { jsElement[r'sortOrder'] = (value != null && value is! JsArray) ? new JsObject.jsify(value) : value;}
 

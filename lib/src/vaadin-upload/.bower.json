@@ -1,5 +1,6 @@
 {
   "name": "vaadin-upload",
+  "version": "1.1.1",
   "homepage": "https://vaadin.com/elements",
   "authors": [
     "Vaadin Ltd"
@@ -28,7 +29,7 @@
     "wct.conf.js"
   ],
   "devDependencies": {
-    "web-component-tester": "^4.0.0",
+    "web-component-tester": "^5.0.0",
     "test-fixture": "PolymerElements/test-fixture#^1.0.0",
     "iron-test-helpers": "PolymerElements/iron-test-helpers#^1.0.0",
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
@@ -47,12 +48,11 @@
     "iron-icon": "PolymerElements/iron-icon#^1.0.0",
     "iron-iconset-svg": "polymerelements/iron-iconset-svg#^1.0.0"
   },
-  "version": "1.1.0",
-  "_release": "1.1.0",
+  "_release": "1.1.1",
   "_resolution": {
     "type": "version",
-    "tag": "v1.1.0",
-    "commit": "3fc0f5d8f21c3a5d3faf8fa4c5c426b0ebaf8ae9"
+    "tag": "v1.1.1",
+    "commit": "0f56c179e4c349a076f5ef475b40cf109296a424"
   },
   "_source": "https://github.com/vaadin/vaadin-upload.git",
   "_target": "*",
