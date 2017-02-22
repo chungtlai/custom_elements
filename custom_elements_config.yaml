@@ -8,6 +8,7 @@ package_mappings:
   - paper-clock: custom_elements
   - paper-time: custom_elements
   - paper-year: custom_elements
+  - image-icons: polymer_elements
   - iron-: polymer_elements
   - neon-: polymer_elements
   - paper-: polymer_elements
@@ -20,7 +21,11 @@ package_mappings:
 files_to_generate:
   - paper-more-button/paper-more-button.html
   - paper-search/paper-filter-dialog.html
-  - paper-search/paper-search-bar.html
+  - paper-search/paper-search-bar.html:
+     omit_imports:
+       - iron-a11y-keys-behavior
+     extra_imports:
+       - package:polymer_elements/iron_a11y_keys_behavior.dart
   - paper-search/paper-search.html
   - paper-search/paper-search-panel.html
   - moment-element/moment-import.html
