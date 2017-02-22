@@ -11,7 +11,7 @@ import 'package:polymer_interop/polymer_interop.dart';
 import 'package:polymer_elements/iron_flex_layout.dart';
 import 'package:polymer_elements/paper_more_button.dart';
 import 'package:polymer_elements/paper_styles.dart';
-import 'package:polymer_elements/paper_search_bar.dart';
+import 'package:custom_elements/paper_search_bar.dart';
 import 'package:polymer_elements/paper_filter_dialog.dart';
 
 /// Panel with a search bar and filtering dialog.

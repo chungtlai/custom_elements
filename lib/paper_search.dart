@@ -8,6 +8,6 @@ import 'dart:html';
 import 'dart:js' show JsArray, JsObject;
 import 'package:web_components/web_components.dart';
 import 'package:polymer_interop/polymer_interop.dart';
-import 'package:polymer_elements/paper_search_bar.dart';
+import 'package:custom_elements/paper_search_bar.dart';
 import 'package:polymer_elements/paper_filter_dialog.dart';
-import 'package:polymer_elements/paper_search_panel.dart';
+import 'package:custom_elements/paper_search_panel.dart';

@@ -43,6 +43,9 @@ import "package:polymer_elements/paper_tab.dart";
 import "package:polymer_elements/iron_pages.dart";
 // ignore: UNUSED_IMPORT
 import 'package:custom_elements/vaadin_date_picker.dart';
+// ignore: UNUSED_IMPORT
+import 'package:custom_elements/paper_search.dart';
+
 import 'package:intl/intl.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:intl/date_symbols.dart';

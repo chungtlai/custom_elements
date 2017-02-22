@@ -51,6 +51,7 @@
                 <paper-tab>Varia</paper-tab>
                 <paper-tab>Layout</paper-tab>
                 <paper-tab>Vaadin</paper-tab>
+                <paper-tab>PaperSearch</paper-tab>
             </paper-tabs>
             <iron-pages class="fl rel ov" selected="[[selectedPage]]">
                 <div>
@@ -158,6 +159,9 @@
                   <vaadin-date-picker label='select a date' i18n='[[dateLocale]]' value='{{myDate}}'></vaadin-date-picker>
                   <br>
                   {{myDate}}
+                </div>
+                <div class='vl fit'>
+                  <paper-search></paper-search>
                 </div>
             </iron-pages>
         </div>

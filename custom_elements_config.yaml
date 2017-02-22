@@ -1,4 +1,5 @@
 package_mappings:
+  - paper-search: custom_elements
   - paper-datatable: custom_elements
   - paper-calendar: custom_elements
   - paper-date: custom_elements
