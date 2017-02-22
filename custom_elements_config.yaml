@@ -197,6 +197,10 @@ files_to_generate:
   - vaadin-upload/vaadin-upload-icons.html
 stubs_to_generate:
  polymer_elements:
+  - paper-badge/paper-badge.html
+  - paper-dialog/paper-dialog.html
+  - paper-toolbar/paper-toolbar.html
+  - paper-item/paper-item-body.html
   - iron-dropdown/iron-dropdown.html
   - iron-input/iron-input.html
   - paper-input/paper-input-container.html
