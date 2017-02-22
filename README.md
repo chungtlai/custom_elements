@@ -14,6 +14,7 @@ Also some styles from [polymerthemes.com](https://polymerthemes.com)
  - [vaadin-upload](https://customelements.io/vaadin/vaadin-upload/)
  - [vaadin-grid](https://customelements.io/vaadin/vaadin-grid/)
  - [vaadin-date-picker](https://customelements.io/vaadin/vaadin-date-picker/)
+ - [paper-search](https://www.webcomponents.org/element/Collaborne/paper-search)
 
 
 ## Ported but not working

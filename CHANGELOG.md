@@ -1,3 +1,6 @@
+##  1.0.0
+ - added `paper-search` components from Collarbone
+
 ##  0.0.12
  - added 'vaadin-date-picker'
  - some fixes
