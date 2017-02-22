@@ -19,7 +19,8 @@
     "vaadin-split-layout": "*",
     "vaadin-icons": "*",
     "vaadin-date-picker": "vaadin-date-picker#v1.2.0-beta1",
-    "iron-icons": "*"
+    "iron-icons": "*",
+    "paper-search": "Collaborne/paper-search#1.2.1"
   },
   "resolutions": {
     "polymer": "^1.7.0",

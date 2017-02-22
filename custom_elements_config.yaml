@@ -15,6 +15,10 @@ package_mappings:
   - Paper: polymer_elements
 # Configuration for running tool/generate_dart_api.dart
 files_to_generate:
+  - paper-search/paper-filter-dialog.html
+  - paper-search/paper-search-bar.html
+  - paper-search/paper-search.html
+  - paper-search/paper-search-panel.html
   - moment-element/moment-import.html
   - moment-element/moment-with-locales-import.html
   - vaadin-date-picker/vaadin-date-picker-behavior.html:
