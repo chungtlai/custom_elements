@@ -48,6 +48,6 @@ class PaperSearchBar extends HtmlElement with CustomElementProxyMixin, PolymerBa
   set placeholder(String value) { jsElement[r'placeholder'] = value; }
 
   /// Text for which the user is searching
-  String get query => jsElement[r'query'];
-  set query(String value) { jsElement[r'query'] = value; }
+  String get queryText => jsElement[r'query'];
+  set queryText(String value) { jsElement[r'query'] = value; }
 }

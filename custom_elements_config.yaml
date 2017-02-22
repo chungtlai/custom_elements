@@ -26,6 +26,13 @@ files_to_generate:
        - iron-a11y-keys-behavior
      extra_imports:
        - package:polymer_elements/iron_a11y_keys_behavior.dart
+     overrides:
+      PaperSearchBar:
+       query:
+        -  "/// Text for which the user is searching"
+        -  "String get queryText => jsElement[r'query'];"
+        -  "set queryText(String value) { jsElement[r'query'] = value; }"
+
   - paper-search/paper-search.html
   - paper-search/paper-search-panel.html
   - moment-element/moment-import.html
